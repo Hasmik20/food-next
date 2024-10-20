@@ -4,17 +4,17 @@ import { notFound } from "next/navigation";
 import { getMeal } from "@/services/action";
 import styles from "./items.module.css";
 
-export const generateMetadata = async ({ params }) => {
-  const meal = await getMeal(params.slug);
+// export const generateMetadata = async ({ params }) => {
+//   const meal = await getMeal(params.slug);
 
-  if (!meal) {
-    notFound();
-  }
-  return {
-    title: meal.title,
-    description: meal.summary,
-  };
-};
+//   if (!meal) {
+//     notFound();
+//   }
+//   return {
+//     title: meal.title,
+//     description: meal.summary,
+//   };
+// };
 
 const MealDetailPage = async ({ params }) => {
   const meal = await getMeal(params.slug);
