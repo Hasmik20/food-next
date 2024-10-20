@@ -1,6 +1,6 @@
 "use server";
 import fs from "node:fs";
-import prisma from "../prisma/prismaClient";
+import prisma from "../prisma/db";
 import slugify from "slugify";
 import xss from "xss";
 
