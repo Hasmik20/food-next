@@ -1,5 +1,5 @@
 import styles from "./mealGrid.module.css";
-import MealItem from "./mealItem";
+import MealItem from "./MealItem";
 
 const MealsGrid = ({ meals }) => {
   return (
